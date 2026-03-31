@@ -67,15 +67,16 @@ cargo run --bin TP2 -- repeat 4 [ forward 100 right 90 ]
 
 ## Fonctionnement
 
-1. Lecture du fichier PCAP
-2. Extraction de l’en-tête Radiotap
-3. Analyse des trames 802.11
-4. Filtrage des trames Beacon (type 0, subtype 8)
-5. Parsing TLV :
-
-   * `0x00` → SSID
-   * `0xdd` → Vendor Specific (DroneID)
-6. Export des résultats
+Lecture du programme depuis la ligne de commande
+Analyse lexicale :
+Détection des tokens (FORWARD, NUMBER, etc.)
+Analyse syntaxique :
+Vérification de la grammaire
+Construction de l’AST
+Deux modes possibles :
+-> Interpréteur (eval) → affichage console
+-> Compilateur (compile) → génération SVG
+Simulation d’une tortue graphique (Position (x, y), Angle, Dessin via segments SVG)
 
 ---
 
