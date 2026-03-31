@@ -1,9 +1,9 @@
-<h1 align="center"> WiFi Analyzer (Rust) </h1>
+<h1 align="center"> Compilateur et Interpréteur Logo </h1>
 <p align="center">
   <img alt="Version" src="https://img.shields.io/badge/version-1.0-blue.svg?cacheSeconds=2592000" />
 </p>
 
-> Analyse des trames WiFi (Beacon) et détection de DroneID à partir de fichiers PCAP
+> Implémentation d’un compilateur et interpréteur du langage Logo en Rust (lexer, parser, AST, SVG)
 
 ---
 
