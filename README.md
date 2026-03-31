@@ -9,36 +9,33 @@
 
 ### 🏠 [Homepage](https://github.com/EtudiantEnsea)
 
-# TP1_rust
+# TP2_rust
 
-Un analyseur de trames WiFi développé en Rust dans le cadre du TP réseau.
+Un compilateur et interpréteur pour un sous-ensemble du langage Logo développé en Rust.
 
 ---
 
 ## Description
 
-`TP1_rust` est un outil permettant d’analyser des fichiers PCAP contenant des trames WiFi (IEEE 802.11).
+`TP2_rust` est un TP visant à implémenter une chaîne de compilation complète pour un langage simple inspiré de Logo.
 
 Le programme :
 
-* Lit les paquets via la bibliothèque `pcap`
-* Détecte les trames **Beacon**
-* Extrait les informations principales :
-
-  * Adresse MAC
-  * SSID
-* Détecte les trames **DroneID** via les champs Vendor Specific
-
+Analyse un programme Logo en entrée (ligne de commande)
+Effectue une analyse lexicale (lexer) et syntaxique (parser)
+Construit un arbre de syntaxe abstraite (AST)
+Permet une interprétation (affichage console) et une compilation en SVG (dessin vectoriel)
 ---
 
 ## Fonctionnalités
 
-* Analyse de fichiers PCAP
-* Parsing des trames Radiotap et 802.11
-* Extraction des champs TLV
-* Détection de réseaux WiFi
-* Détection de drones (DroneID)
-* Export des résultats en **JSON** ou **CSV**
+*Définition d’une grammaire Logo (BNF simplifiée)
+*Analyse lexicale avec santiago
+*Analyse syntaxique (parser)
+*Génération d’un AST
+*Interpréteur Logo (console)
+*Compilateur Logo → SVG
+*Simulation d’une tortue graphique (turtle)
 
 ---
 
