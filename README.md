@@ -29,13 +29,13 @@ Permet une interprétation (affichage console) et une compilation en SVG (dessin
 
 ## Fonctionnalités
 
-*Définition d’une grammaire Logo (BNF simplifiée)
-*Analyse lexicale avec santiago
-*Analyse syntaxique (parser)
-*Génération d’un AST
-*Interpréteur Logo (console)
-*Compilateur Logo → SVG
-*Simulation d’une tortue graphique (turtle)
+* Définition d’une grammaire Logo (BNF simplifiée)
+* Analyse lexicale avec santiago
+* Analyse syntaxique (parser)
+* Génération d’un AST
+* Interpréteur Logo (console)
+* Compilateur Logo → SVG
+* Simulation d’une tortue graphique (turtle)
 
 ---
 
