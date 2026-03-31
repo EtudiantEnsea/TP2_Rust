@@ -43,42 +43,25 @@ Permet une interprétation (affichage console) et une compilation en SVG (dessin
 
 ```text
 src/
-├── main.rs        # Interface CLI
-├── lib.rs         # Bibliothèque principale
-├── parser.rs      # Analyse des paquets
-├── tlv.rs         # Parsing TLV
-└── output.rs      # Export JSON / CSV
+└── main.rs       # Programme principal (lexer, parser, AST, interprétation, SVG)
+output.svg        # Dessin fais l'utilisateur
 ```
-
----
-
-## Compilation
-
-```sh
-cargo build
-```
-
 ---
 
 ## Utilisation
 
 ```sh
-cargo run -- --pcap data/capture.pcap --output-format json --output-file results.json
+cargo run --bin TP2 -- forward 100 right 90 forward 100 right 90 forward 100 right 90 forward 100
+
+cargo run --bin TP2 -- repeat 4 [ forward 100 right 90 ]
 ```
 
 ---
 
 ## Exemple de sortie
 
-```json
-[
-  {
-    "mac": "34:27:92:37:ff:2a",
-    "ssid": "Freebox-37FF29",
-    "is_drone": false
-  }
-]
-```
+<img width="1709" height="852" alt="image" src="https://github.com/user-attachments/assets/04964a62-0e90-44f5-bd75-ee17ca6e9e0c" />
+
 
 ---
 
@@ -99,16 +82,6 @@ cargo run -- --pcap data/capture.pcap --output-format json --output-file results
 ## Prérequis
 
 * Rust installé
-* Npcap (Windows)
-
----
-
-## Documentation
-
-```sh
-cargo doc --no-deps --open
-```
-
 ---
 
 ## Auteur
