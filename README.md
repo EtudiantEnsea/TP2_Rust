@@ -62,7 +62,6 @@ cargo run --bin TP2 -- repeat 4 [ forward 100 right 90 ]
 ## Exemple de sortie
 
 <img width="1709" height="852" alt="image" src="https://github.com/user-attachments/assets/04964a62-0e90-44f5-bd75-ee17ca6e9e0c" />
----
 
 ## Prérequis
 
